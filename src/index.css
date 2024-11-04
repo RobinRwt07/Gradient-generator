@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  .box {
+    @apply p-4 max-w-screen-xl mx-auto lg:p-5 xl:p-6
+  }
+}
+
+@layer components {
+  .selectedColors {
+    @apply size-14 border border-gray-700 rounded-md;
+  }
+
+  .angle-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    max-width: 400px;
+    flex: auto;
+    height: 12px;
+    background: #ccddff;
+    border-radius: .5rem;
+    outline: none;
+  }
+
+  .angle-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: blue;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .angle-slider::-moz-range-thumb {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: blue;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .angle-slider::-moz-range-track {
+    background: #e5e7eb;
+    height: 15px;
+    border-radius: .5rem;
+  }
+}
